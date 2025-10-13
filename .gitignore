@@ -1,0 +1,15 @@
+# Claude code init
+CLAUDE.md
+
+#python binary files
+__pycache__
+
+# course book
+BOOK.pdf
+
+# VSCode
+.DS_Store
+
+# misc markdowns
+*.md
+!NN_ARCHITECTURE.md
