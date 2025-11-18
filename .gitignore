@@ -13,3 +13,6 @@ BOOK.pdf
 # misc markdowns
 *.md
 !NN_ARCHITECTURE.md
+
+# Checkpoint file
+*.pth

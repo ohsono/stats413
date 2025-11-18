@@ -1,0 +1,318 @@
+{"time":"2025-10-31T16:05:18.757528-07:00","level":"INFO","msg":"stream: starting","core version":"0.22.3"}
+{"time":"2025-10-31T16:05:18.801614-07:00","level":"ERROR","msg":"monitor: failed to initialize GPU resource: monitor: could not start GPU binary: fork/exec /Users/hochan.son/Project/table-synthesizers/.conda/lib/python3.11/site-packages/wandb/bin/gpu_stats: bad CPU type in executable"}
+{"time":"2025-10-31T16:05:19.006987-07:00","level":"INFO","msg":"stream: created new stream","id":"ofqzvgz1"}
+{"time":"2025-10-31T16:05:19.007069-07:00","level":"INFO","msg":"handler: started","stream_id":"ofqzvgz1"}
+{"time":"2025-10-31T16:05:19.007553-07:00","level":"INFO","msg":"writer: started","stream_id":"ofqzvgz1"}
+{"time":"2025-10-31T16:05:19.00758-07:00","level":"INFO","msg":"stream: started","id":"ofqzvgz1"}
+{"time":"2025-10-31T16:05:19.007596-07:00","level":"INFO","msg":"sender: started","stream_id":"ofqzvgz1"}
+{"time":"2025-10-31T16:50:59.106999-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 192.168.1.221:62675->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2025-10-31T17:03:46.615473-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 192.168.1.221:55135->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2025-10-31T17:09:35.090211-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ohsono-ucla/STATS413_HW3/ofqzvgz1/file_stream\": dial tcp 35.186.228.49:443: connect: operation timed out"}
+{"time":"2025-10-31T17:09:36.301172-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-10-31T17:09:55.391968-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 192.168.1.221:55458->35.186.228.49:443: read: operation timed out"}
+{"time":"2025-10-31T17:09:58.876353-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ohsono-ucla/STATS413_HW3/ofqzvgz1/file_stream\": dial tcp 35.186.228.49:443: connect: operation timed out"}
+{"time":"2025-10-31T17:10:29.478431-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-10-31T17:10:29.479928-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ohsono-ucla/STATS413_HW3/ofqzvgz1/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-10-31T17:11:08.081679-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-10-31T17:11:08.081696-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ohsono-ucla/STATS413_HW3/ofqzvgz1/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-10-31T17:11:38.427146-07:00","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":481}
+{"time":"2025-10-31T17:11:54.401129-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-10-31T17:11:54.402618-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ohsono-ucla/STATS413_HW3/ofqzvgz1/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-10-31T17:12:03.72298-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":1999,"current":249510}
+{"time":"2025-10-31T17:12:15.898965-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":3999,"current":249510}
+{"time":"2025-10-31T17:12:27.146506-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":5999,"current":249510}
+{"time":"2025-10-31T17:12:38.381331-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":7999,"current":249510}
+{"time":"2025-10-31T17:12:49.565608-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":9999,"current":249510}
+{"time":"2025-10-31T17:12:57.727327-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ohsono-ucla/STATS413_HW3/ofqzvgz1/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-10-31T17:12:57.727383-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-10-31T17:13:00.579295-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":11999,"current":249510}
+{"time":"2025-10-31T17:13:37.811469-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":14499,"current":249510}
+{"time":"2025-10-31T17:13:48.819175-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":16499,"current":249510}
+{"time":"2025-10-31T17:13:59.83609-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":18499,"current":249510}
+{"time":"2025-10-31T17:14:10.927999-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":20499,"current":249510}
+{"time":"2025-10-31T17:14:22.051062-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":22499,"current":249510}
+{"time":"2025-10-31T17:14:27.729663-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-10-31T17:14:27.732635-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ohsono-ucla/STATS413_HW3/ofqzvgz1/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-10-31T17:14:32.940787-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":24499,"current":249510}
+{"time":"2025-10-31T17:15:10.197648-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":26999,"current":249510}
+{"time":"2025-10-31T17:15:21.113867-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":28999,"current":249510}
+{"time":"2025-10-31T17:15:32.08541-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":30999,"current":249510}
+{"time":"2025-10-31T17:15:42.985933-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":32999,"current":249510}
+{"time":"2025-10-31T17:15:54.009092-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":34999,"current":249510}
+{"time":"2025-10-31T17:15:57.733578-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-10-31T17:15:57.734426-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ohsono-ucla/STATS413_HW3/ofqzvgz1/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-10-31T17:16:05.762123-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":36999,"current":249510}
+{"time":"2025-10-31T17:16:43.055573-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":39499,"current":249510}
+{"time":"2025-10-31T17:16:54.114344-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":41499,"current":249510}
+{"time":"2025-10-31T17:17:05.257079-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":43499,"current":249510}
+{"time":"2025-10-31T17:17:16.259438-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":45499,"current":249510}
+{"time":"2025-10-31T17:17:27.198235-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":47499,"current":249510}
+{"time":"2025-10-31T17:17:27.737246-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-10-31T17:17:27.740049-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ohsono-ucla/STATS413_HW3/ofqzvgz1/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-10-31T17:17:38.097505-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":49499,"current":249510}
+{"time":"2025-10-31T17:18:15.715505-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":51999,"current":249510}
+{"time":"2025-10-31T17:18:26.622225-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":53999,"current":249510}
+{"time":"2025-10-31T17:18:37.641423-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":55999,"current":249510}
+{"time":"2025-10-31T17:18:48.738499-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":57999,"current":249510}
+{"time":"2025-10-31T17:18:57.739645-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-10-31T17:18:57.741059-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ohsono-ucla/STATS413_HW3/ofqzvgz1/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-10-31T17:18:59.887732-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":59999,"current":249510}
+{"time":"2025-10-31T17:19:06.308329-07:00","level":"WARN","msg":"sender: taking a long time","seconds":600.000503402,"work":"WorkRecord(*service_go_proto.Request_StopStatus); Control(local:true mailbox_slot:\"6sz16epbjl1j\" connection_id:\"1\")"}
+{"time":"2025-10-31T17:19:10.895385-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":61999,"current":249510}
+{"time":"2025-10-31T17:19:49.45464-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":64499,"current":249510}
+{"time":"2025-10-31T17:20:00.927247-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":66499,"current":249510}
+{"time":"2025-10-31T17:20:12.017196-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":68499,"current":249510}
+{"time":"2025-10-31T17:20:22.97719-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":70499,"current":249510}
+{"time":"2025-10-31T17:20:27.743194-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-10-31T17:20:27.744936-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ohsono-ucla/STATS413_HW3/ofqzvgz1/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-10-31T17:20:33.948743-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":72499,"current":249510}
+{"time":"2025-10-31T17:20:44.941361-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":74499,"current":249510}
+{"time":"2025-10-31T17:21:25.356342-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":76999,"current":249510}
+{"time":"2025-10-31T17:21:36.26376-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":78999,"current":249510}
+{"time":"2025-10-31T17:21:47.071313-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":80999,"current":249510}
+{"time":"2025-10-31T17:21:57.746776-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-10-31T17:21:57.751508-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ohsono-ucla/STATS413_HW3/ofqzvgz1/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-10-31T17:21:58.518886-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":82999,"current":249510}
+{"time":"2025-10-31T17:22:10.713575-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":84999,"current":249510}
+{"time":"2025-10-31T17:22:22.405335-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":86999,"current":249510}
+{"time":"2025-10-31T17:23:03.516604-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":89499,"current":249510}
+{"time":"2025-10-31T17:23:15.321792-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":91499,"current":249510}
+{"time":"2025-10-31T17:23:27.043397-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":93499,"current":249510}
+{"time":"2025-10-31T17:23:27.750189-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-10-31T17:23:27.754399-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ohsono-ucla/STATS413_HW3/ofqzvgz1/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-10-31T17:23:38.915654-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":95499,"current":249510}
+{"time":"2025-10-31T17:23:51.609059-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":97499,"current":249510}
+{"time":"2025-10-31T17:24:05.241128-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":99499,"current":249510}
+{"time":"2025-10-31T17:24:48.517057-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":101999,"current":249510}
+{"time":"2025-10-31T17:24:57.75355-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-10-31T17:24:57.75587-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ohsono-ucla/STATS413_HW3/ofqzvgz1/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-10-31T17:25:01.248705-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":103999,"current":249510}
+{"time":"2025-10-31T17:25:14.873833-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":105999,"current":249510}
+{"time":"2025-10-31T17:25:28.484026-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":107999,"current":249510}
+{"time":"2025-10-31T17:25:42.801564-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":109999,"current":249510}
+{"time":"2025-10-31T17:25:56.92674-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":111999,"current":249510}
+{"time":"2025-10-31T17:26:27.75751-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-10-31T17:26:27.759547-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ohsono-ucla/STATS413_HW3/ofqzvgz1/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-10-31T17:26:42.391905-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":114499,"current":249510}
+{"time":"2025-10-31T17:26:55.561281-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":116499,"current":249510}
+{"time":"2025-10-31T17:27:10.857496-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":118499,"current":249510}
+{"time":"2025-10-31T17:27:25.825951-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":120499,"current":249510}
+{"time":"2025-10-31T17:27:40.63815-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":122499,"current":249510}
+{"time":"2025-10-31T17:27:55.503664-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":124499,"current":249510}
+{"time":"2025-10-31T17:27:57.761449-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-10-31T17:27:57.763432-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ohsono-ucla/STATS413_HW3/ofqzvgz1/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-10-31T17:28:43.428199-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":126999,"current":249510}
+{"time":"2025-10-31T17:28:57.95657-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":128999,"current":249510}
+{"time":"2025-10-31T17:29:06.323839-07:00","level":"WARN","msg":"sender: taking a long time","seconds":1200.007165909,"work":"WorkRecord(*service_go_proto.Request_StopStatus); Control(local:true mailbox_slot:\"6sz16epbjl1j\" connection_id:\"1\")"}
+{"time":"2025-10-31T17:29:15.005806-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":130999,"current":249510}
+{"time":"2025-10-31T17:29:27.765345-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-10-31T17:29:27.768237-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ohsono-ucla/STATS413_HW3/ofqzvgz1/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-10-31T17:29:31.312245-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":132999,"current":249510}
+{"time":"2025-10-31T17:29:47.67288-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":134999,"current":249510}
+{"time":"2025-10-31T17:30:04.915554-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":136999,"current":249510}
+{"time":"2025-10-31T17:30:54.227423-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":139499,"current":249510}
+{"time":"2025-10-31T17:30:57.768514-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-10-31T17:30:57.771541-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ohsono-ucla/STATS413_HW3/ofqzvgz1/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-10-31T17:31:10.780271-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":141499,"current":249510}
+{"time":"2025-10-31T17:31:27.41565-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":143499,"current":249510}
+{"time":"2025-10-31T17:31:45.206235-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":145499,"current":249510}
+{"time":"2025-10-31T17:32:04.599348-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":147499,"current":249510}
+{"time":"2025-10-31T17:32:24.330895-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":149499,"current":249510}
+{"time":"2025-10-31T17:32:27.771195-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-10-31T17:32:27.775332-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ohsono-ucla/STATS413_HW3/ofqzvgz1/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-10-31T17:33:22.784145-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":151999,"current":249510}
+{"time":"2025-10-31T17:33:40.109161-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":153999,"current":249510}
+{"time":"2025-10-31T17:33:57.773712-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-10-31T17:33:57.776752-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ohsono-ucla/STATS413_HW3/ofqzvgz1/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-10-31T17:33:59.563177-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":155999,"current":249510}
+{"time":"2025-10-31T17:34:20.808425-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":157999,"current":249510}
+{"time":"2025-10-31T17:34:44.639859-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":159999,"current":249510}
+{"time":"2025-10-31T17:35:08.304791-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":161999,"current":249510}
+{"time":"2025-10-31T17:35:27.777525-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-10-31T17:35:27.779385-07:00","level":"ERROR","msg":"sender: sendStopStatus: failed to get run stopped status: api: failed sending: POST https://api.wandb.ai/graphql giving up after 21 attempt(s): Post \"https://api.wandb.ai/graphql\": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-10-31T17:35:27.781488-07:00","level":"INFO","msg":"sender: succeeded after taking longer than expected","seconds":1581.459017395,"work":"WorkRecord(*service_go_proto.Request_StopStatus); Control(local:true mailbox_slot:\"6sz16epbjl1j\" connection_id:\"1\")"}
+{"time":"2025-10-31T17:35:27.781508-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ohsono-ucla/STATS413_HW3/ofqzvgz1/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-10-31T17:35:27.787502-07:00","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":127}
+{"time":"2025-10-31T17:36:07.720875-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-10-31T17:36:08.794722-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":164499,"current":249510}
+{"time":"2025-10-31T17:36:27.329987-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":166499,"current":249510}
+{"time":"2025-10-31T17:36:39.784143-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-10-31T17:36:39.786879-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ohsono-ucla/STATS413_HW3/ofqzvgz1/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-10-31T17:36:47.729775-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":168499,"current":249510}
+{"time":"2025-10-31T17:37:09.512981-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":170499,"current":249510}
+{"time":"2025-10-31T17:37:14.762339-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-10-31T17:37:32.814832-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":172499,"current":249510}
+{"time":"2025-10-31T17:37:53.591504-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-10-31T17:37:53.595246-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ohsono-ucla/STATS413_HW3/ofqzvgz1/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-10-31T17:37:55.902528-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":174499,"current":249510}
+{"time":"2025-10-31T17:38:43.466041-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-10-31T17:38:56.692028-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":176999,"current":249510}
+{"time":"2025-10-31T17:39:17.566646-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":178999,"current":249510}
+{"time":"2025-10-31T17:39:23.600576-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-10-31T17:39:23.600672-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ohsono-ucla/STATS413_HW3/ofqzvgz1/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-10-31T17:39:38.355373-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":180999,"current":249510}
+{"time":"2025-10-31T17:39:59.627386-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":182999,"current":249510}
+{"time":"2025-10-31T17:40:15.747646-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":184999,"current":249510}
+{"time":"2025-10-31T17:40:28.685851-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":186999,"current":249510}
+{"time":"2025-10-31T17:40:53.603956-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-10-31T17:40:53.605464-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ohsono-ucla/STATS413_HW3/ofqzvgz1/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-10-31T18:17:00.875109-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":189499,"current":249510}
+{"time":"2025-10-31T18:17:18.87653-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":191499,"current":249510}
+{"time":"2025-10-31T19:03:32.791391-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":193499,"current":249510}
+{"time":"2025-10-31T19:03:52.082295-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":195499,"current":249510}
+{"time":"2025-10-31T19:04:02.46292-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":197499,"current":249510}
+{"time":"2025-10-31T19:04:13.176415-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":199499,"current":249510}
+{"time":"2025-10-31T19:04:48.618186-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":201999,"current":249510}
+{"time":"2025-10-31T19:04:57.889487-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":203999,"current":249510}
+{"time":"2025-10-31T19:05:05.374443-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":205999,"current":249510}
+{"time":"2025-10-31T19:09:58.648218-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ohsono-ucla/STATS413_HW3/ofqzvgz1/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-10-31T19:10:00.999172-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ohsono-ucla/STATS413_HW3/ofqzvgz1/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-10-31T19:10:36.092984-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":207999,"current":249510}
+{"time":"2025-10-31T19:10:47.364739-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":209999,"current":249510}
+{"time":"2025-10-31T19:10:57.755233-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":211999,"current":249510}
+{"time":"2025-10-31T19:11:31.973011-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":214499,"current":249510}
+{"time":"2025-10-31T19:11:40.497967-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":216499,"current":249510}
+{"time":"2025-10-31T19:11:48.992049-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":218499,"current":249510}
+{"time":"2025-10-31T19:11:57.264887-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":220499,"current":249510}
+{"time":"2025-10-31T19:12:05.85807-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":222499,"current":249510}
+{"time":"2025-10-31T19:12:14.346845-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":224499,"current":249510}
+{"time":"2025-10-31T19:12:46.740149-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":226999,"current":249510}
+{"time":"2025-10-31T19:12:55.110395-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":228999,"current":249510}
+{"time":"2025-10-31T19:13:03.633087-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":230999,"current":249510}
+{"time":"2025-10-31T19:13:12.009604-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":232999,"current":249510}
+{"time":"2025-10-31T19:13:22.047058-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":234999,"current":249510}
+{"time":"2025-10-31T19:13:30.707657-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":236999,"current":249510}
+{"time":"2025-10-31T19:31:59.996658-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 192.168.1.221:51155->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2025-10-31T19:32:17.428165-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":239499,"current":249510}
+{"time":"2025-10-31T19:32:26.0873-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":241499,"current":249510}
+{"time":"2025-10-31T19:32:34.762042-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":243499,"current":249510}
+{"time":"2025-10-31T19:32:43.550576-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":245499,"current":249510}
+{"time":"2025-10-31T19:32:52.109199-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":247499,"current":249510}
+{"time":"2025-10-31T19:33:00.699635-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":249499,"current":249510}
+{"time":"2025-10-31T19:34:26.289804-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":1999,"current":249521}
+{"time":"2025-10-31T19:34:37.465473-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":3999,"current":249521}
+{"time":"2025-10-31T19:34:48.693543-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":5999,"current":249521}
+{"time":"2025-10-31T19:34:59.790938-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":7999,"current":249521}
+{"time":"2025-10-31T19:35:15.89612-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":9999,"current":249521}
+{"time":"2025-10-31T19:35:39.130887-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":11999,"current":249521}
+{"time":"2025-10-31T19:36:38.818806-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":14499,"current":249521}
+{"time":"2025-10-31T19:37:00.936856-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":16499,"current":249521}
+{"time":"2025-10-31T19:37:17.015848-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":18499,"current":249521}
+{"time":"2025-10-31T19:37:38.279585-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":20499,"current":249521}
+{"time":"2025-10-31T19:38:01.423547-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":22499,"current":249521}
+{"time":"2025-10-31T19:38:21.799766-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":24499,"current":249521}
+{"time":"2025-10-31T19:39:05.156103-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":26999,"current":249521}
+{"time":"2025-10-31T19:39:22.457123-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":28999,"current":249521}
+{"time":"2025-10-31T19:39:44.129363-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":30999,"current":249521}
+{"time":"2025-10-31T19:40:04.095367-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":32999,"current":249521}
+{"time":"2025-10-31T19:40:21.731538-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":34999,"current":249521}
+{"time":"2025-10-31T19:40:41.329805-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":36999,"current":249521}
+{"time":"2025-10-31T19:41:42.445017-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":39499,"current":249521}
+{"time":"2025-10-31T19:42:09.736245-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":41499,"current":249521}
+{"time":"2025-10-31T19:42:37.725527-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":43499,"current":249521}
+{"time":"2025-10-31T19:42:59.524743-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":45499,"current":249521}
+{"time":"2025-10-31T19:43:20.688882-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":47499,"current":249521}
+{"time":"2025-10-31T19:43:39.78013-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":49499,"current":249521}
+{"time":"2025-10-31T19:44:29.608266-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":51999,"current":249521}
+{"time":"2025-10-31T19:44:49.511914-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":53999,"current":249521}
+{"time":"2025-10-31T19:45:09.268248-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":55999,"current":249521}
+{"time":"2025-10-31T19:45:30.891348-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":57999,"current":249521}
+{"time":"2025-10-31T19:45:57.593838-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":59999,"current":249521}
+{"time":"2025-10-31T19:46:22.421057-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":61999,"current":249521}
+{"time":"2025-10-31T19:47:19.597396-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":64499,"current":249521}
+{"time":"2025-10-31T19:47:37.299396-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":66499,"current":249521}
+{"time":"2025-10-31T19:47:55.784522-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":68499,"current":249521}
+{"time":"2025-10-31T19:48:15.349937-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":70499,"current":249521}
+{"time":"2025-10-31T19:48:33.520357-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":72499,"current":249521}
+{"time":"2025-10-31T19:48:51.913934-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":74499,"current":249521}
+{"time":"2025-10-31T19:49:40.120727-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":76999,"current":249521}
+{"time":"2025-10-31T20:11:11.08896-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 192.168.1.221:53784->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2025-10-31T20:11:18.00001-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":78999,"current":249521}
+{"time":"2025-10-31T20:12:00.534542-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":80999,"current":249521}
+{"time":"2025-10-31T20:12:31.341581-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":82999,"current":249521}
+{"time":"2025-10-31T20:12:53.867949-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":84999,"current":249521}
+{"time":"2025-10-31T20:13:18.092143-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":86999,"current":249521}
+{"time":"2025-10-31T20:14:15.472538-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":89499,"current":249521}
+{"time":"2025-10-31T20:14:35.465029-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":91499,"current":249521}
+{"time":"2025-10-31T20:14:52.875375-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":93499,"current":249521}
+{"time":"2025-10-31T20:15:10.775809-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":95499,"current":249521}
+{"time":"2025-10-31T20:15:30.897692-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":97499,"current":249521}
+{"time":"2025-10-31T20:15:54.204575-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":99499,"current":249521}
+{"time":"2025-10-31T20:16:48.671439-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":101999,"current":249521}
+{"time":"2025-10-31T20:17:06.319908-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":103999,"current":249521}
+{"time":"2025-10-31T20:17:25.494862-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":105999,"current":249521}
+{"time":"2025-10-31T20:17:46.065067-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":107999,"current":249521}
+{"time":"2025-10-31T20:18:04.984637-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":109999,"current":249521}
+{"time":"2025-10-31T20:18:24.379035-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":111999,"current":249521}
+{"time":"2025-10-31T20:19:06.944889-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":114499,"current":249521}
+{"time":"2025-10-31T20:19:20.167788-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":116499,"current":249521}
+{"time":"2025-10-31T20:19:33.326689-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":118499,"current":249521}
+{"time":"2025-10-31T20:19:46.382031-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":120499,"current":249521}
+{"time":"2025-10-31T20:19:59.730509-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":122499,"current":249521}
+{"time":"2025-10-31T20:20:13.037004-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":124499,"current":249521}
+{"time":"2025-10-31T20:20:52.724606-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":126999,"current":249521}
+{"time":"2025-10-31T20:21:14.788161-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":128999,"current":249521}
+{"time":"2025-10-31T20:21:29.948106-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":130999,"current":249521}
+{"time":"2025-10-31T20:21:43.812074-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":132999,"current":249521}
+{"time":"2025-10-31T20:21:57.484642-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":134999,"current":249521}
+{"time":"2025-10-31T20:22:10.586557-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":136999,"current":249521}
+{"time":"2025-10-31T20:22:49.894564-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":139499,"current":249521}
+{"time":"2025-10-31T20:23:01.975961-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":141499,"current":249521}
+{"time":"2025-10-31T20:23:14.470102-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":143499,"current":249521}
+{"time":"2025-10-31T20:23:27.072136-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":145499,"current":249521}
+{"time":"2025-10-31T20:23:39.273679-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":147499,"current":249521}
+{"time":"2025-10-31T20:23:51.971839-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":149499,"current":249521}
+{"time":"2025-10-31T20:24:29.539864-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":151999,"current":249521}
+{"time":"2025-10-31T20:24:51.675985-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":153999,"current":249521}
+{"time":"2025-10-31T20:25:12.571746-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":155999,"current":249521}
+{"time":"2025-10-31T20:25:32.405112-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":157999,"current":249521}
+{"time":"2025-10-31T20:25:52.475236-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":159999,"current":249521}
+{"time":"2025-10-31T20:26:13.92156-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":161999,"current":249521}
+{"time":"2025-10-31T20:27:03.228691-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":164499,"current":249521}
+{"time":"2025-10-31T20:27:23.10696-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":166499,"current":249521}
+{"time":"2025-10-31T20:27:45.806438-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":168499,"current":249521}
+{"time":"2025-10-31T20:28:07.275353-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":170499,"current":249521}
+{"time":"2025-10-31T20:28:29.889868-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":172499,"current":249521}
+{"time":"2025-10-31T20:28:52.867547-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":174499,"current":249521}
+{"time":"2025-10-31T20:29:47.869982-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":176999,"current":249521}
+{"time":"2025-10-31T20:30:09.783807-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":178999,"current":249521}
+{"time":"2025-10-31T20:30:31.69411-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":180999,"current":249521}
+{"time":"2025-10-31T20:30:54.440348-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":182999,"current":249521}
+{"time":"2025-10-31T20:31:11.57661-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":184999,"current":249521}
+{"time":"2025-10-31T20:31:29.659513-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":186999,"current":249521}
+{"time":"2025-10-31T20:32:18.230856-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":189499,"current":249521}
+{"time":"2025-10-31T20:32:31.224063-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":191499,"current":249521}
+{"time":"2025-10-31T20:32:46.663635-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":193499,"current":249521}
+{"time":"2025-10-31T20:33:01.199043-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":195499,"current":249521}
+{"time":"2025-10-31T20:33:20.649813-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":197499,"current":249521}
+{"time":"2025-10-31T20:33:39.741193-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":199499,"current":249521}
+{"time":"2025-10-31T20:34:35.407974-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":201999,"current":249521}
+{"time":"2025-10-31T20:34:44.73599-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":203999,"current":249521}
+{"time":"2025-10-31T20:34:53.571277-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":205999,"current":249521}
+{"time":"2025-10-31T20:35:02.471527-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":207999,"current":249521}
+{"time":"2025-10-31T20:35:16.721329-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":209999,"current":249521}
+{"time":"2025-10-31T20:35:34.831529-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":211999,"current":249521}
+{"time":"2025-10-31T20:36:09.582579-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":214499,"current":249521}
+{"time":"2025-10-31T20:36:20.474351-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":216499,"current":249521}
+{"time":"2025-10-31T20:36:30.610133-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":218499,"current":249521}
+{"time":"2025-10-31T20:36:41.166382-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":220499,"current":249521}
+{"time":"2025-10-31T20:36:51.733023-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":222499,"current":249521}
+{"time":"2025-10-31T20:37:02.617003-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":224499,"current":249521}
+{"time":"2025-10-31T20:37:53.679742-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":226999,"current":249521}
+{"time":"2025-10-31T20:38:11.641203-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":228999,"current":249521}
+{"time":"2025-10-31T20:38:30.29239-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":230999,"current":249521}
+{"time":"2025-10-31T20:38:49.066651-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":232999,"current":249521}
+{"time":"2025-10-31T20:39:08.452688-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":234999,"current":249521}
+{"time":"2025-10-31T20:39:28.07255-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":236999,"current":249521}
+{"time":"2025-10-31T20:40:13.559836-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":239499,"current":249521}
+{"time":"2025-10-31T20:40:31.130568-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":241499,"current":249521}
+{"time":"2025-10-31T20:40:50.140366-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":243499,"current":249521}
+{"time":"2025-10-31T20:41:07.82363-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":245499,"current":249521}
+{"time":"2025-10-31T20:41:28.898785-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":247499,"current":249521}
+{"time":"2025-10-31T20:41:58.910433-07:00","level":"WARN","msg":"handler: ignoring partial history record","step":249499,"current":249521}
+{"time":"2025-10-31T20:43:22.773647-07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-31T20:43:22.952843-07:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-10-31T20:43:23.014208-07:00","level":"INFO","msg":"stream: closing","id":"ofqzvgz1"}
+{"time":"2025-10-31T20:43:23.014245-07:00","level":"INFO","msg":"handler: closed","stream_id":"ofqzvgz1"}
+{"time":"2025-10-31T20:43:23.014423-07:00","level":"INFO","msg":"sender: closed","stream_id":"ofqzvgz1"}
+{"time":"2025-10-31T20:43:23.014444-07:00","level":"INFO","msg":"stream: closed","id":"ofqzvgz1"}
