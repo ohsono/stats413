@@ -16,3 +16,6 @@ BOOK.pdf
 
 # Checkpoint file
 *.pth
+
+# compressed files
+*.tar.gz
