@@ -19,3 +19,6 @@ BOOK.pdf
 
 # compressed files
 *.tar.gz
+
+# data files
+HW/HW3/data/
