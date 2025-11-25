@@ -15,8 +15,7 @@ BOOK.pdf
 
 # misc markdowns
 *.md
-NN_ARCHITECTURE.md
-AGENTS.md
+!NN_ARCHITECTURE.md
 
 # bak file
 *.bak
