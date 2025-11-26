@@ -12,7 +12,8 @@ BOOK.pdf
 
 # misc markdowns
 *.md
-!NN_ARCHITECTURE.md
+NN_ARCHITECTURE.md
+AGENTS.md
 
 # Checkpoint file
 *.pth
