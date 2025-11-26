@@ -15,7 +15,17 @@ BOOK.pdf
 
 # misc markdowns
 *.md
-!NN_ARCHITECTURE.md
+NN_ARCHITECTURE.md
+AGENTS.md
 
 # bak file
 *.bak
+
+# Checkpoint file
+*.pth
+
+# compressed files
+*.tar.gz
+
+# data files
+HW/HW3/data/
