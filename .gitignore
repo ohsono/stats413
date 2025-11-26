@@ -10,10 +10,16 @@ BOOK.pdf
 # VSCode
 .DS_Store
 
+# MacOS file system
+._*
+
 # misc markdowns
 *.md
 NN_ARCHITECTURE.md
 AGENTS.md
+
+# bak file
+*.bak
 
 # Checkpoint file
 *.pth
