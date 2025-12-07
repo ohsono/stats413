@@ -20,6 +20,9 @@ BOOK.pdf
 # bak file
 *.bak
 
+# bak file
+*.bak
+
 # Checkpoint file
 *.pth
 
