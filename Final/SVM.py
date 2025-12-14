@@ -18,6 +18,7 @@ class SupportVectorMachine:
         self.n_iters = n_iters
         self.w = 0
         self.b = 0
+        self.batch_size = 100
 
     def hingeloss(self, w, b, x, y):
         # Regularizer term
@@ -64,19 +65,11 @@ class SupportVectorMachine:
             losses.append(l)
             
             # Starting from 0 to the number of samples with batch_size as interval
-            batch_size = 100 # Default batch size could be moved to __init__ or fit arg, kept local for now or use full batch? 
-            # The original code had batch_size=100 in args. Let's keep it simple or default to 100 if not passed? 
-            # The user plan said remove args. I'll hardcode or deduce. 
-            # Original code was: def fit(self, X, Y, batch_size=100, learning_rate=0.001, epochs=1000):
-            # Let's check the user request again. "Unify parameter usage". 
-            # I will use self.n_iters for epochs. batch_size wasn't in __init__, so I'll leave it as a local constant or arg?
-            # To be safe and clean, I'll keep batch_size as 100 here since it's not in init.
-            
-            for batch_initial in range(0, number_of_samples, batch_size):
+            for batch_initial in range(0, number_of_samples, self.batch_size):
                 gradw = 0
                 gradb = 0
 
-                for j in range(batch_initial, batch_initial + batch_size):
+                for j in range(batch_initial, batch_initial + self.batch_size):
                     if j < number_of_samples:
                         x = ids[j]
                         ti = Y[x] * (np.dot(w, X[x].T) + b)
