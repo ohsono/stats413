@@ -1,95 +1,36 @@
 name: Claude Code Review
 
+permissions:
+  pull-requests: write
+  contents: read
+
 on:
   pull_request:
-    types: [opened, synchronize]
-    # Optional: Only run on specific file changes
-    # paths:
-    #   - "src/**/*.ts"
-    #   - "src/**/*.tsx"
-    #   - "src/**/*.js"
-    #   - "src/**/*.jsx"
+    types: [opened, synchronize, reopened]
 
 jobs:
-  claude-review:
-    # Optional: Filter by PR author
-    # if: |
-    #   github.event.pull_request.user.login == 'external-contributor' ||
-    #   github.event.pull_request.user.login == 'new-developer' ||
-    #   github.event.pull_request.author_association == 'FIRST_TIME_CONTRIBUTOR'
-
+  code-review:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      pull-requests: read
-      issues: read
-      id-token: write
-
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v4
         with:
-          fetch-depth: 1
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install anthropic PyGithub
 
       - name: Run Claude Code Review
-        id: claude-review
-        uses: anthropics/claude-code-action@beta
-        with:
-          anthropic_api_key: ${{ secrets.CLAUDE_API_KEY }}
-
-          # Optional: Specify model (defaults to Claude Sonnet 4, uncomment for Claude Opus 4)
-          model: "claude-sonnet-4-5-20250929"
-
-          # Direct prompt for automated review (no @claude mention needed)
-          direct_prompt: |
-            # Please review this pull request and provide feedback on:
-            # - Code quality and best practices
-            # - Potential bugs or issues
-            # - Performance considerations
-            # - Security concerns
-            # - Test coverage
-
-            # Be constructive and helpful in your feedback.
-            You are an expert code reviewer. Please review the following pull request changes and provide constructive feedback.
-
-            Focus on:
-            1. **Code Quality**: Clean code, readability, maintainability
-            2. **Best Practices**: Language-specific conventions and patterns
-            3. **Potential Bugs**: Logic errors, edge cases, error handling
-            4. **Performance**: Inefficient algorithms or operations
-            5. **Security**: Common vulnerabilities (if applicable)
-            6. **Testing**: Whether changes need tests or improve testability
-            7. **Documentation**: Code comments and documentation needs
-
-            Provide your review in the following format:
-            - Start with an overall summary
-            - List specific issues or suggestions with file names and line references when possible
-            - Be constructive and specific
-            - Highlight positive aspects too
-
-            Pull Request Changes:
-            {diff_content}
-          # Optional: Use sticky comments to make Claude reuse the same comment on subsequent pushes to the same PR
-          # use_sticky_comment: true
-
-          # Optional: Customize review based on file types
-          # direct_prompt: |
-          #   Review this PR focusing on:
-          #   - For TypeScript files: Type safety and proper interface usage
-          #   - For API endpoints: Security, input validation, and error handling
-          #   - For React components: Performance, accessibility, and best practices
-          #   - For tests: Coverage, edge cases, and test quality
-
-          # Optional: Different prompts for different authors
-          # direct_prompt: |
-          #   ${{ github.event.pull_request.author_association == 'FIRST_TIME_CONTRIBUTOR' &&
-          #   'Welcome! Please review this PR from a first-time contributor. Be encouraging and provide detailed explanations for any suggestions.' ||
-          #   'Please provide a thorough code review focusing on our coding standards and best practices.' }}
-
-          # Optional: Add specific tools for running tests or linting
-          # allowed_tools: "Bash(npm run test),Bash(npm run lint),Bash(npm run typecheck)"
-
-          # Optional: Skip review for certain conditions
-          # if: |
-          #   !contains(github.event.pull_request.title, '[skip-review]') &&
-          #   !contains(github.event.pull_request.title, '[WIP]')
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.CLAUDE_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          REPO_NAME: ${{ github.repository }}
+        run: |
+          python .github/scripts/claude_review.py
