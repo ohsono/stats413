@@ -7,7 +7,7 @@ Analyzes PR changes using Claude API and posts review comments.
 import os
 import sys
 from anthropic import Anthropic
-from github import Github
+from github import Github, Auth
 
 def get_pr_diff(repo, pr_number):
     """Fetch the PR diff from GitHub."""
@@ -26,9 +26,9 @@ def get_pr_diff(repo, pr_number):
 
     return "\n".join(diff_content), pr
 
-def review_with_claude(diff_content):
+def review_with_claude(diff_content, api_key):
     """Send the diff to Claude for code review."""
-    client = Anthropic(api_key=os.environ['ANTHROPIC_API_KEY'])
+    client = Anthropic(api_key=api_key)
 
     prompt = f"""You are an expert code reviewer. Please review the following pull request changes and provide constructive feedback.
 
@@ -75,13 +75,40 @@ def post_review_comment(pr, review_text):
 def main():
     """Main function to orchestrate the code review process."""
     try:
-        # Get environment variables
-        github_token = os.environ['GITHUB_TOKEN']
-        pr_number = int(os.environ['PR_NUMBER'])
-        repo_name = os.environ['REPO_NAME']
+        # Get environment variables with stripping to handle potential whitespace
+        github_token = os.environ.get('GITHUB_TOKEN', '').strip()
+        anthropic_key = os.environ.get('ANTHROPIC_API_KEY', '').strip()
+        pr_number = int(os.environ.get('PR_NUMBER', '0'))
+        repo_name = os.environ.get('REPO_NAME', '').strip()
 
-        # Initialize GitHub client
-        g = Github(github_token)
+        # Debug logging for environment variables (masked)
+        print(f"Debug: PR_NUMBER={pr_number}")
+        print(f"Debug: REPO_NAME={repo_name}")
+        if github_token:
+            print(f"Debug: GITHUB_TOKEN found (starts with: {github_token[:4]}...)")
+        else:
+            print("Debug: GITHUB_TOKEN not found")
+            
+        if anthropic_key:
+            print(f"Debug: ANTHROPIC_API_KEY found (starts with: {anthropic_key[:7]}...)")
+        else:
+            print("Debug: ANTHROPIC_API_KEY not found")
+
+        # Validate required env vars early with helpful messages
+        if not github_token:
+            print("Error: GITHUB_TOKEN is not set. Make sure the workflow exposes `secrets.GITHUB_TOKEN`.", file=sys.stderr)
+            sys.exit(1)
+        if not anthropic_key:
+            print("Error: ANTHROPIC_API_KEY is not set. Set secret 'CLAUDE_API_KEY' or export ANTHROPIC_API_KEY.", file=sys.stderr)
+            sys.exit(1)
+        if not repo_name or pr_number == 0:
+            print("Error: PR_NUMBER or REPO_NAME not set correctly in environment.", file=sys.stderr)
+            sys.exit(1)
+
+        # Initialize GitHub client using the newer auth parameter
+        # Note: The 'Argument login_or_token is deprecated' warning is fixed here by using auth=...
+        auth = Auth.Token(github_token)
+        g = Github(auth=auth)
         repo = g.get_repo(repo_name)
 
         print(f"Fetching PR #{pr_number} from {repo_name}...")
@@ -92,7 +119,7 @@ def main():
             return
 
         print("Sending changes to Claude for review...")
-        review = review_with_claude(diff_content)
+        review = review_with_claude(diff_content, anthropic_key)
 
         print("Posting review comment to PR...")
         post_review_comment(pr, review)
@@ -101,6 +128,9 @@ def main():
 
     except Exception as e:
         print(f"Error during code review: {e}", file=sys.stderr)
+        # Verify if it's an auth error specifically
+        if "authentication method" in str(e).lower():
+            print("Tip: Double-check that ANTHROPIC_API_KEY is valid and not empty.", file=sys.stderr)
         sys.exit(1)
 
 if __name__ == "__main__":
