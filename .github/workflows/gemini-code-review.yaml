@@ -1,4 +1,4 @@
-name: Claude Code Review
+name: "Code Review by Gemini AI"
 
 permissions:
   pull-requests: write
@@ -9,7 +9,7 @@ on:
     types: [opened, synchronize, reopened]
 
 jobs:
-  code-review:
+  review:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -24,13 +24,13 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install anthropic PyGithub
+          pip install google-generativeai PyGithub
 
-      - name: Run Claude Code Review
+      - name: Run Gemini Code Review
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.CLAUDE_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
           REPO_NAME: ${{ github.repository }}
         run: |
-          python .github/scripts/claude_review.py
+          python .github/scripts/gemini_review.py

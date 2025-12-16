@@ -31,3 +31,6 @@ BOOK.pdf
 
 # data files
 HW/HW3/data/
+
+# env file
+.env
