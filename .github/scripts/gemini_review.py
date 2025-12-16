@@ -46,7 +46,8 @@ def review_with_gemini(diff_content, api_key):
             print(f"Warning: Could not initialize {name}: {e}")
             
     if not model:
-        return "Error: Could not initialize any Gemini models. Please check your API key and quota."
+        print("Error: Could not initialize any Gemini models. Please check your API key and quota.", file=sys.stderr)
+        sys.exit(1)
 
     prompt = f"""You are an expert code reviewer. Please review the following pull request changes and provide constructive feedback.
 
@@ -73,9 +74,11 @@ Pull Request Changes:
         response = model.generate_content(prompt)
         return response.text
     except Exception as e:
-        # Debugging helper
         print(f"Error calling Gemini API: {e}", file=sys.stderr)
-        return f"Error analyzing code with Gemini: {str(e)}"
+        # Re-raise or exit so the workflow marks as failed, 
+        # or return a specific error message if you want the bot to comment about the failure.
+        # Here we choose to fail the action.
+        sys.exit(1)
 
 def post_review_comment(pr, review_text):
     """Post the review as a comment on the PR."""
