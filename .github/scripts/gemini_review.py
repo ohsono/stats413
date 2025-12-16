@@ -6,7 +6,7 @@ Analyzes PR changes using Google Gemini API and posts review comments.
 
 import os
 import sys
-import google.generativeai as genai
+from google import genai
 from github import Github, Auth
 
 def get_pr_diff(repo, pr_number):
@@ -29,26 +29,11 @@ def get_pr_diff(repo, pr_number):
 def review_with_gemini(diff_content, api_key):
     """Send the diff to Gemini for code review."""
     
-    # Configure Gemini
-    genai.configure(api_key=api_key)
+    client = genai.Client(api_key=api_key)
     
-    # Try getting a valid model - fallback chain
     # Priority: Flash (fast/efficient) -> Pro (stronger reasoning) -> Legacy
     model_names = ['gemini-2.5-flash', 'gemini-2.5-flash-lite', 'gemini-2.5-pro']
-    model = None
     
-    for name in model_names:
-        try:
-            print(f"Attempting to initialize model: {name}")
-            model = genai.GenerativeModel(name)
-            break
-        except Exception as e:
-            print(f"Warning: Could not initialize {name}: {e}")
-            
-    if not model:
-        print("Error: Could not initialize any Gemini models. Please check your API key and quota.", file=sys.stderr)
-        sys.exit(1)
-
     prompt = f"""You are an expert code reviewer. Please review the following pull request changes and provide constructive feedback.
 
 Focus on:
@@ -70,15 +55,19 @@ Pull Request Changes:
 {diff_content}
 """
 
-    try:
-        response = model.generate_content(prompt)
-        return response.text
-    except Exception as e:
-        print(f"Error calling Gemini API: {e}", file=sys.stderr)
-        # Re-raise or exit so the workflow marks as failed, 
-        # or return a specific error message if you want the bot to comment about the failure.
-        # Here we choose to fail the action.
-        sys.exit(1)
+    for name in model_names:
+        try:
+            print(f"Attempting to generate review with model: {name}")
+            response = client.models.generate_content(
+                model=name,
+                contents=prompt
+            )
+            return response.text
+        except Exception as e:
+            print(f"Warning: Failed with {name}: {e}")
+            
+    print("Error: Could not generate review with any Gemini models. Please check your API key and quota.", file=sys.stderr)
+    sys.exit(1)
 
 def post_review_comment(pr, review_text):
     """Post the review as a comment on the PR."""
@@ -109,7 +98,7 @@ def main():
             print("Debug: GEMINI_API_KEY not found")
 
         if not github_token or not gemini_key or not repo_name or pr_number == 0:
-            print("Error: Missing required environment variables.", file=sys.stderr)
+            print("Error: Missing required environment variables. Please check your GitHub Repository Secrets (GEMINI_API_KEY).", file=sys.stderr)
             sys.exit(1)
 
         # Initialize GitHub client
