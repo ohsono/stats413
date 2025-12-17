@@ -15,6 +15,7 @@ BOOK.pdf
 
 # misc markdowns
 *.md
+!SUMMARY_*.md
 !NN_ARCHITECTURE.md
 
 # bak file
@@ -34,3 +35,6 @@ HW/HW3/data/
 
 # env file
 .env
+
+# tests
+/tests
