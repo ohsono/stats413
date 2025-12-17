@@ -24,7 +24,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install google-generativeai PyGithub
+          pip install google-genai PyGithub
 
       - name: Run Gemini Code Review
         env:
